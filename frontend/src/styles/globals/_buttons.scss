@@ -19,6 +19,7 @@ button {
     &.card-btn {
         @include bg(transparent);
         @include radius(var(--global-radius));
+        color: var(--board-color-lighter);
         border: none;
         padding: .5rem;
         transition: background .2s;

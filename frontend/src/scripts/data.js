@@ -3,3 +3,5 @@ const data = {
     exisitingUser: false,
     
 }
+
+export default data;

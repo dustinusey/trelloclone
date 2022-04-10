@@ -14,7 +14,12 @@
 </head>
 <body>
 
-    <div class="menu-panel"></div>
+    <div class="menu-panel">
+        <div class="menu-header">
+            <p class="menu-header-title">Menu</p>
+            <i class="fa-solid fa-xmark closer"></i>
+        </div>
+    </div>
 
     <header>
         <div class="top-level">
@@ -22,65 +27,85 @@
             <img src="./frontend/dist/images/avatar.png" alt="Avatar for current user" class="trello-avatar">
         </div>
         <div class="bottom-level">
-            <button class="board-name menu-btn">Test Board</button>
+            <div class="btn-group">
+                <p class="board-title"><strong>Test Board 1</strong></p>
+                <button class="menu-btn add-list"><i class="fa-solid fa-plus"></i> New List</button>
+            </div>
             <button class="menu menu-btn">Show menu</button>
         </div>
     </header>
 
     <main class="trello-board">
+
         <div class="trello-card-list">
+            <!-- title -->
             <div class="list-title-container">
-                <p>List One</p>
+                <p>Not started</p>
                 <i class="fa-solid fa-ellipsis"></i>
             </div>
+            <!-- card -->
             <div class="container">
                 <div class="card" draggable="true">
-                    <p class="card-title">card 1</p>
+                    <p class="card-title">Update Back Office carousel to handle mobile images</p>
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="card" draggable="true">
+                    <p class="card-title">Add script tag to Head for Google Optimize</p>
                     <i class="fa-solid fa-pen"></i>
                 </div>
             </div>
+            <!-- add btn -->
             <button class="card-btn">
                 <i class="fa-solid fa-plus"></i> Add a card
             </button>
+
         </div>
+        
         <div class="trello-card-list">
+            <!-- title -->
             <div class="list-title-container">
-                <p>List One</p>
+                <p>In progress</p>
                 <i class="fa-solid fa-ellipsis"></i>
             </div>
+            <!-- card -->
             <div class="container">
+                
                 <div class="card" draggable="true">
-                    <p class="card-title">card 1</p>
-                    <i class="fa-solid fa-pen"></i>
-                </div>
-                <div class="card" draggable="true">
-                    <p class="card-title">card 2</p>
-                    <i class="fa-solid fa-pen"></i>
-                </div>
-                <div class="card" draggable="true">
-                    <p class="card-title">card 3</p>
+                    <p class="card-title">Update Neora logo on PWS (all markets)</p>
                     <i class="fa-solid fa-pen"></i>
                 </div>
             </div>
+            <!-- add btn -->
             <button class="card-btn">
                 <i class="fa-solid fa-plus"></i> Add a card
             </button>
+
         </div>
+
         <div class="trello-card-list">
+            <!-- title -->
             <div class="list-title-container">
-                <p>List One</p>
+                <p>Completed</p>
                 <i class="fa-solid fa-ellipsis"></i>
             </div>
+            <!-- card -->
             <div class="container">
                 <div class="card" draggable="true">
-                    <p class="card-title">card 1</p>
+                    <p class="card-title">Make everyone hate me for leaving Neora</p>
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="card" draggable="true">
+                    <p class="card-title">Update upsell module color theme for Mother's Day</p>
                     <i class="fa-solid fa-pen"></i>
                 </div>
             </div>
+            <!-- add btn -->
             <button class="card-btn">
                 <i class="fa-solid fa-plus"></i> Add a card
             </button>
+
         </div>
+        
     </main>
     
 

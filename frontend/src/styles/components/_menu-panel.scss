@@ -1,0 +1,44 @@
+.menu-panel {
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    @include size(100vh, var(--menu-pabel-width));
+    max-width: var(--menu-pabel-width);
+    min-width: var(--menu-pabel-width);
+    box-shadow: 0px -15px 12px rgba(black, 0.15);
+    @include bg(white);
+    right: calc(var(--menu-pabel-width) / -1);
+    z-index: 10;
+    transition: right .3s ease;
+    &.toggle {
+        right: 0;
+    }
+
+
+    .menu-header {
+        @include flex(row, nowrap, space-between, center);
+        position: relative;
+        padding: 0 0 1rem;
+        border-bottom: 1px solid rgb(194, 194, 194);
+        color: var(--board-color-lighter);
+        p.menu-header-title {
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        i.fa-xmark {
+            @include absolute-center();
+            left: 95%;
+            top: 30%;
+            padding: .5rem 1rem;
+            cursor: pointer;
+            transition: background .3s ease;
+            @include radius(var(--global-radius));
+            &:hover {
+                @include bg(rgba(black, 0.05));
+            }
+        }
+
+    }
+}

@@ -17,18 +17,7 @@ header {
             letter-spacing: .8px;
             color: rgb(241, 237, 237);
             font-size: 1.5rem;
-            // position: relative;
-            &::after {
-                content: '';
-                @include simple-size(35px);
-                background-image: url('../../../frontend/dist/images/favicon.png');
-                background-size: 25px;
-                background-position: center;
-                background-repeat: no-repeat;
-                position: absolute;
-                top: -4px;
-                left: -40px;
-            }
+            
             span {
                 font-weight: 300;
             }
@@ -43,5 +32,9 @@ header {
     .bottom-level {
         @include bg(transparent);
         @include flex(row, nowrap, space-between, center);
+        .btn-group {
+            @include flex(row, nowrap, flex-start, center);
+            gap: 1rem;
+        }
     }
 }

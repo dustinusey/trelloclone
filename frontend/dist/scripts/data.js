@@ -1,1 +1,1 @@
-const data={boardCount:0,exisitingUser:!1};
+const data={boardCount:0,exisitingUser:!1};export default data;
