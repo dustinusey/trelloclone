@@ -1,0 +1,31 @@
+button {
+
+    cursor: pointer;
+
+    &.menu-btn {
+        @include bg(rgba(white, 0.3));
+        color: var(--menu-btn-color);
+        letter-spacing: .8px;
+        font-weight: 500;
+        padding: .5rem 1rem;
+        border-radius: var(--global-radius);
+        border: none;
+        transition: background .3s;
+        &:hover {
+            @include bg(rgba(white, 0.6));
+        }
+    }
+
+    &.card-btn {
+        @include bg(transparent);
+        @include radius(var(--global-radius));
+        border: none;
+        padding: .5rem;
+        transition: background .2s;
+        width: 100%;
+        text-align: left;
+        &:hover {
+            @include bg(rgba(black, 0.05));
+        }
+    }
+}

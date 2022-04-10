@@ -14,15 +14,76 @@
 </head>
 <body>
 
-    <header>
+    <div class="menu-panel"></div>
 
+    <header>
+        <div class="top-level">
+            <h1>Trello<span>Clone</span></h1>
+            <img src="./frontend/dist/images/avatar.png" alt="Avatar for current user" class="trello-avatar">
+        </div>
+        <div class="bottom-level">
+            <button class="board-name menu-btn">Test Board</button>
+            <button class="menu menu-btn">Show menu</button>
+        </div>
     </header>
 
     <main class="trello-board">
-        
+        <div class="trello-card-list">
+            <div class="list-title-container">
+                <p>List One</p>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="container">
+                <div class="card" draggable="true">
+                    <p class="card-title">card 1</p>
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+            </div>
+            <button class="card-btn">
+                <i class="fa-solid fa-plus"></i> Add a card
+            </button>
+        </div>
+        <div class="trello-card-list">
+            <div class="list-title-container">
+                <p>List One</p>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="container">
+                <div class="card" draggable="true">
+                    <p class="card-title">card 1</p>
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="card" draggable="true">
+                    <p class="card-title">card 2</p>
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <div class="card" draggable="true">
+                    <p class="card-title">card 3</p>
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+            </div>
+            <button class="card-btn">
+                <i class="fa-solid fa-plus"></i> Add a card
+            </button>
+        </div>
+        <div class="trello-card-list">
+            <div class="list-title-container">
+                <p>List One</p>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="container">
+                <div class="card" draggable="true">
+                    <p class="card-title">card 1</p>
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+            </div>
+            <button class="card-btn">
+                <i class="fa-solid fa-plus"></i> Add a card
+            </button>
+        </div>
     </main>
     
 
-    <script src="./frontend/dist/scripts/app.js"></script>
+    <script type="module" src="./frontend/dist/scripts/app.js"></script>
 </body>
 </html>

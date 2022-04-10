@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-height: 100px;
+    --board-bg: rgb(140, 176, 219);
+    --board-color: rgb(41, 40, 40);
+    --board-color-lighter: rgb(86, 85, 85);
+
+    --global-radius: 5px;
+
+    --menu-btn-bg: rgba(white, 0.2);
+    --menu-btn-color: var(--board-color);
+
+    --trello-list-width: 325px;
+    --trello-list: #EBECF0;
+    --trellow-card: white;
+
+    
+}
+
+body {
+    @include bg(var(--board-bg));
+    font-family: 'Inter', sans-serif;
+    color: var(--board-color);
+}

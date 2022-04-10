@@ -1,0 +1,47 @@
+header {
+    @include flex(column, nowrap, flex-start, center);
+    height: var(--header-height);
+    position: sticky;
+    top: 0;
+    .top-level,
+    .bottom-level {
+        padding: .5rem 1rem;
+        width: 100%;
+    }
+    .top-level {
+        @include flex(row,nowrap,flex-end,center);
+        @include bg(rgba(0, 0, 0, 0.2));
+        position: relative;
+        h1 {
+            @include absolute-center;
+            letter-spacing: .8px;
+            color: rgb(241, 237, 237);
+            font-size: 1.5rem;
+            // position: relative;
+            &::after {
+                content: '';
+                @include simple-size(35px);
+                background-image: url('../../../frontend/dist/images/favicon.png');
+                background-size: 25px;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: -4px;
+                left: -40px;
+            }
+            span {
+                font-weight: 300;
+            }
+        }
+        img.trello-avatar {
+            @include radius(50%);
+            @include simple-size(35px);
+            border: 2px solid white;
+            cursor: pointer;
+        }
+    }
+    .bottom-level {
+        @include bg(transparent);
+        @include flex(row, nowrap, space-between, center);
+    }
+}

@@ -1,0 +1,42 @@
+.trello-card-list {
+    @include bg(var(--trello-list));
+    @include radius(var(--global-radius));
+    @include size(auto, var(--trello-list-width));
+    min-width: var(--trello-list-width);
+    max-width: var(--trello-list-width);
+    padding: .5rem;
+    margin-right: .55rem;
+    .list-title-container {
+        @include flex(row, nowrap, space-between, center);
+        cursor: pointer;
+        padding: .5rem;
+        p {
+            font-weight: 600;
+            font-size: .9rem;
+        }
+    }
+    .container {
+        @include flex(column, nowrap, flex-start, stretch);
+        padding: .5rem 0;
+        .card {
+            @include flex(row, nowrap, space-between, center);
+            @include bg(white);
+            @include radius(var(--global-radius));
+            margin-bottom: .25rem;
+            box-shadow: 0 1px 1px rgba(black, 0.15);
+            padding: .5rem;
+            cursor: pointer;
+            p {
+                font-size: .9rem;
+            }
+            i {
+                font-size: .6rem;
+                color: var(--board-color-lighter);
+                opacity: 0;
+            }
+            &:hover i {
+                opacity: 1;
+            }
+        }
+    }
+}
